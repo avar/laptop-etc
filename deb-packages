@@ -13,8 +13,6 @@ ethtool
 iotop
 htop
 tp-smapi-dkms
-virtualbox-ose-guest-x11
-virtualbox-ose-dkms
 ecryptfs-utils
 hdparm
 
