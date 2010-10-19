@@ -22,6 +22,7 @@ hdparm
 screen
 git
 build-essential
+clang
 emacs23
 
 # internet
