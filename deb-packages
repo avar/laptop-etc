@@ -15,65 +15,36 @@ sysfsutils
 ethtool
 iotop
 htop
-linux-headers-2.6-amd64
 tp-smapi-dkms
-virtualbox-ose-qt
+virtualbox-ose-guest-x11
 virtualbox-ose-dkms
 ecryptfs-utils
-adduser: adduser
 hdparm
-
-# laptop support
-# mostly stolen from "tasksel --task-packages laptop"
-laptop-detect
-wireless-tools
-acpi-support
-cpufrequtils
-acpi
-wpasupplicant
-powertop
-vbetool
-acpid
-pm-utils
-radeontool
-avahi-autoipd
-bluetooth
-firmware-iwlwifi
 
 # coding
 screen
 git
 build-essential
-vim
+emacs23
 
 # internet
 iodine
 irssi
-pidgin
-pidgin-extprefs
-ekiga
-gwibber
-indicator-messages
-indicator-applet
-iceweasel
+google-chrome-stable
 flashplugin-nonfree
 sun-java6-plugin
 
 # graphics
 gimp
-gnome-raw-thumbnailer: gnome-raw-thumbnailer
-lensfun: liblensfun-data liblensfun0 liblensfun-dev
-darktable: darktable
 
 # audio
 banshee
 
 # office
-abiword
-gnumeric
+#abiword
+#gnumeric
 
 # misc
-tomboy
 ttf-dejavu
 ttf-unifont # this has some Unicode symbols which are missing from ttf-dejavu
 tree
