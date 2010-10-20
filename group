@@ -49,7 +49,7 @@ netdev:x:109:avar
 bluetooth:x:110:avar
 lpadmin:x:111:
 ssl-cert:x:112:
-fuse:x:113:
+fuse:x:113:avar
 utempter:x:114:
 Debian-gdm:x:115:
 scanner:x:116:saned,avar
