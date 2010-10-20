@@ -22,6 +22,7 @@ git
 build-essential
 clang
 emacs23
+perl-doc
 
 # internet
 iodine
