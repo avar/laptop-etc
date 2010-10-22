@@ -21,6 +21,7 @@ screen
 git
 build-essential
 clang
+curl
 emacs23
 perl-doc
 
