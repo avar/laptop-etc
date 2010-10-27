@@ -25,6 +25,7 @@ curl
 emacs23
 perl-doc
 xmlstarlet
+pv
 
 # internet
 iodine
