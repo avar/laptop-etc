@@ -26,6 +26,9 @@ emacs23
 perl-doc
 xmlstarlet
 pv
+strace
+ack-grep
+manpages-dev
 
 # internet
 iodine
