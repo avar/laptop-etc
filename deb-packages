@@ -23,6 +23,7 @@ build-essential
 clang
 curl
 emacs23
+emacs23-common-non-dfsg
 perl-doc
 xmlstarlet
 pv
