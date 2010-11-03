@@ -30,6 +30,13 @@ pv
 strace
 ack-grep
 manpages-dev
+sqlite3
+
+# perl modules
+libdatetime-perl
+libdbd-sqlite3-perl
+libmoose-perl
+libterm-sk-perl
 
 # internet
 iodine
