@@ -60,3 +60,4 @@ powerdev:x:119:
 pulse:x:120:
 pulse-access:x:121:
 bitlbee:x:122:
+ntpd:x:123:

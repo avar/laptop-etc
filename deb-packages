@@ -38,10 +38,13 @@ libdbd-sqlite3-perl
 libmoose-perl
 libterm-sk-perl
 
+# daemons
+openntpd
+bitlbee
+
 # internet
 iodine
 irssi
-bitlbee
 google-chrome-unstable
 icedove
 pidgin
