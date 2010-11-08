@@ -59,5 +59,5 @@ haldaemon:x:118:
 powerdev:x:119:
 pulse:x:120:
 pulse-access:x:121:
-bitlbee:x:122:
+bitlbee:x:122:avar
 ntpd:x:123:
