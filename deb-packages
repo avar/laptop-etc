@@ -15,6 +15,7 @@ htop
 tp-smapi-dkms
 ecryptfs-utils
 hdparm
+netselect-apt
 
 # coding
 screen
