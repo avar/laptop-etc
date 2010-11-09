@@ -21,6 +21,7 @@ netselect-apt
 screen
 git
 build-essential
+libc6-dev
 clang
 curl
 emacs23
