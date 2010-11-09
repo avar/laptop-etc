@@ -34,11 +34,13 @@ ack-grep
 manpages-dev
 sqlite3
 
-# perl modules
+## Perl modules
 libdatetime-perl
 libdbd-sqlite3-perl
 libmoose-perl
 libterm-sk-perl
+# For check-rollout.pl
+libtext-tabulardisplay-perl
 
 # daemons
 openntpd
