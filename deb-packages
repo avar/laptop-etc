@@ -63,6 +63,9 @@ gimp
 # audio
 banshee
 
+# video
+mplayer
+
 # office
 #abiword
 #gnumeric
