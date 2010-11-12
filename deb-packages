@@ -41,6 +41,7 @@ libmoose-perl
 libterm-sk-perl
 # For check-rollout.pl
 libtext-tabulardisplay-perl
+libtext-csv-xs-perl
 
 # daemons
 openntpd
