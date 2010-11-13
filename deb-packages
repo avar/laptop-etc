@@ -21,6 +21,7 @@ netselect-apt
 screen
 git
 build-essential
+ccache
 clang
 curl
 emacs23
