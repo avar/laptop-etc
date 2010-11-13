@@ -42,6 +42,7 @@ libterm-sk-perl
 # For check-rollout.pl
 libtext-tabulardisplay-perl
 libtext-csv-xs-perl
+libapp-nopaste-perl
 
 # daemons
 openntpd
