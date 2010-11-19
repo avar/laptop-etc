@@ -34,6 +34,7 @@ strace
 ack-grep
 manpages-dev
 sqlite3
+mysql-client
 
 # C libraries
 libc6-dev
