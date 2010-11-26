@@ -35,6 +35,7 @@ ack-grep
 manpages-dev
 sqlite3
 mysql-client
+build-dep: josm
 
 # C libraries
 libc6-dev
