@@ -17,36 +17,59 @@ ecryptfs-utils
 hdparm
 netselect-apt
 
-# coding
+## Coding / hacking
+
+# editing
+emacs23
+
+# hacking tools
 screen
 git
+curl
+xmlstarlet
+gdb
+strace
+ack-grep
+pv
+
+# Documentation
+manpages-dev
+glibc-doc
+emacs23-common-non-dfsg
+
+# C compilation
 build-essential
 ccache
 clang
-curl
-emacs23
-emacs23-common-non-dfsg
-gettext
-perl-doc
-xmlstarlet
-pv
-strace
-ack-grep
-manpages-dev
-sqlite3
-mysql-client
-build-dep: josm
 
 # C libraries
+gettext
 libc6-dev
 libcurl4-openssl-dev
 libexpat1-dev
 
-## Perl modules
+# SQL
+sqlite3
+mysql-client
+
+# Java
+sun-java6-bin
+sun-java6-jre
+sun-java6-jdk
+sun-java6-plugin
+build-dep: josm
+
+## Perl
+
+# Core utilities
+perl-doc
+
+# Perl modules
 libdatetime-perl
 libdbd-sqlite3-perl
 libmoose-perl
 libterm-sk-perl
+
 # For check-rollout.pl
 libtext-tabulardisplay-perl
 libtext-csv-xs-perl
@@ -64,7 +87,6 @@ icedove
 pidgin
 pidgin-extprefs
 flashplugin-nonfree
-sun-java6-plugin
 tcpflow
 
 # graphics
@@ -75,10 +97,6 @@ banshee
 
 # video
 mplayer
-
-# office
-#abiword
-#gnumeric
 
 # misc
 ttf-dejavu
