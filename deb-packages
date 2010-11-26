@@ -58,7 +58,16 @@ sun-java6-jre
 sun-java6-jdk
 sun-java6-plugin
 build-dep: josm
-remove: openjdk-6-jdk openjdk-6-jre openjdk-6-jre-headless openjdk-6-jre-lib
+remove: openjdk-6-jdk
+remove: openjdk-6-jre
+remove: openjdk-6-jre-headless
+remove: openjdk-6-jre-lib
+remove: gcj-4.4-base
+remove: gcj-4.4-jre-headless
+remove: gcj-4.4-jre-lib
+remove: gcj-jre-headless
+remove: libgcj-common
+remove: libgcj10
 
 ## Perl
 
