@@ -16,6 +16,7 @@ tp-smapi-dkms
 ecryptfs-utils
 hdparm
 netselect-apt
+apg
 
 ## Coding / hacking
 
