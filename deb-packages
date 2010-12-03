@@ -17,6 +17,7 @@ ecryptfs-utils
 hdparm
 netselect-apt
 apg
+wdiff
 
 ## Coding / hacking
 
