@@ -23,6 +23,7 @@ wdiff
 
 # editing
 emacs23
+w3m-el-snapshot
 
 # hacking tools
 screen
