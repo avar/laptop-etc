@@ -90,7 +90,6 @@ libapp-nopaste-perl
 
 # daemons
 openntpd
-bitlbee
 
 # internet
 iodine
