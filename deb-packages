@@ -121,6 +121,20 @@ ttf-unifont # this has some Unicode symbols which are missing from ttf-dejavu
 tree
 unrar
 
+# Remove openoffice. It's huge
+remove: openoffice.org-base
+remove: openoffice.org-calc
+remove: openoffice.org-common
+remove: openoffice.org-core
+remove: openoffice.org-draw
+remove: openoffice.org-filter-binfilter
+remove: openoffice.org-gcj
+remove: openoffice.org-impress
+remove: openoffice.org-math
+remove: openoffice.org-style-galaxy
+remove: openoffice.org-thesaurus-en-us
+remove: openoffice.org-writer
+
 # The "gnome-desktop" task is full of (official) bloat like evolution and
 # epiphany, so here is a lightweight GNOME desktop, ~1GB smaller
 alacarte
