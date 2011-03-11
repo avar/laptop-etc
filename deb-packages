@@ -114,6 +114,15 @@ banshee
 # video
 mplayer
 rtmpdump
+vlc
+
+# photos
+ufraw
+ufraw-batch
+
+# gps
+gpsbabel
+mkgmap
 
 # misc
 ttf-dejavu
