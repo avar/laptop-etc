@@ -123,6 +123,7 @@ ufraw-batch
 # gps
 gpsbabel
 mkgmap
+qlandkarte
 
 # misc
 ttf-dejavu
