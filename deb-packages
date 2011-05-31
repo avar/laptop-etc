@@ -58,6 +58,7 @@ libexpat1-dev
 # SQL
 sqlite3
 mysql-client
+mysql-server
 
 # Java
 sun-java6-bin
