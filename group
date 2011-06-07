@@ -62,3 +62,4 @@ pulse-access:x:121:
 bitlbee:x:122:avar
 ntpd:x:123:
 pcscd:x:124:
+mysql:x:125:
