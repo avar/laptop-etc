@@ -1,2 +1,0 @@
-@reboot bash /etc/bin/cron/debian-bug-467231-dyncomp >/dev/null
-@daily  bash /etc/bin/cron/debian-bug-467231-dyncomp >/dev/null
