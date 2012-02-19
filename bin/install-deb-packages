@@ -3,7 +3,7 @@ package Deb::Packages;
 use v5.10.1;
 BEGIN {
     eval { require Mouse } or do {
-        system "aptitude install libmouse-perl" and die "Can't install this";
+        system "aptitude install libmouse-perl libipc-system-simple-perl" and die "Can't install this";
     }
 }
 use Mouse;
