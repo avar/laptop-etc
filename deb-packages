@@ -58,7 +58,7 @@ libexpat1-dev
 # SQL
 sqlite3
 mysql-client
-mysql-server
+#mysql-server
 
 # Java
 sun-java6-bin
@@ -99,10 +99,7 @@ openntpd
 # internet
 iodine
 irssi
-google-chrome-unstable
 icedove
-pidgin
-pidgin-extprefs
 flashplugin-nonfree
 tcpflow
 
@@ -124,7 +121,7 @@ ufraw-batch
 # gps
 gpsbabel
 mkgmap
-qlandkarte
+#qlandkarte
 
 # misc
 ttf-dejavu
@@ -145,72 +142,3 @@ remove: openoffice.org-math
 remove: openoffice.org-style-galaxy
 remove: openoffice.org-thesaurus-en-us
 remove: openoffice.org-writer
-
-# The "gnome-desktop" task is full of (official) bloat like evolution and
-# epiphany, so here is a lightweight GNOME desktop, ~1GB smaller
-alacarte
-baobab
-brasero
-desktop-base
-dnsmasq-base
-dmz-cursor-theme
-evince
-file-roller
-freedesktop-sound-theme
-gcalctool
-gconf-editor
-gdm3
-gksu
-gnome-about
-gnome-bluetooth
-gnome-codec-install
-gnome-color-manager
-gnome-core
-gnome-disk-utility
-gnome-keyring
-gnome-media
-gnome-netstatus-applet
-gnome-screensaver
-gnome-screenshot
-gnome-system-log
-gnome-system-monitor
-gnome-system-tools
-gnome-themes
-gnome-user-share
-gparted
-ffmpeg
-gstreamer0.10-ffmpeg
-gstreamer0.10-plugins-bad
-gstreamer0.10-plugins-base
-gstreamer0.10-plugins-good
-gstreamer0.10-plugins-ugly
-gstreamer0.10-pulseaudio
-gstreamer0.10-tools
-gtk2-engines
-gucharmap
-gvfs-backends
-gvfs-bin
-hamster-applet
-libpam-gnome-keyring
-mobile-broadband-provider-info
-network-manager-gnome
-network-manager-openvpn-gnome
-pulseaudio
-pulseaudio-module-x11
-python-vte
-remmina
-remmina-plugin-rdp
-remmina-plugin-vnc
-seahorse
-seahorse-plugins
-system-config-printer
-system-config-printer-udev
-totem
-totem-mozilla
-totem-plugins
-vino
-xdg-utils
-xdg-user-dirs
-xdg-user-dirs-gtk
-xnest
-xserver-xorg
