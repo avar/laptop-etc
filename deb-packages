@@ -142,3 +142,6 @@ remove: openoffice.org-math
 remove: openoffice.org-style-galaxy
 remove: openoffice.org-thesaurus-en-us
 remove: openoffice.org-writer
+
+# Emacs
+build-dep: emacs23
