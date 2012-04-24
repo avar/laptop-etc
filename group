@@ -60,3 +60,6 @@ rtkit:x:120:
 saned:x:121:
 avar:x:1000:
 ntpd:x:122:
+lpadmin:x:123:
+vboxusers:x:124:
+elasticsearch:x:125:
