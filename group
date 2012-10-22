@@ -63,3 +63,5 @@ ntpd:x:122:
 lpadmin:x:123:
 vboxusers:x:124:
 elasticsearch:x:125:
+libvirt:x:126:
+kvm:x:127:
