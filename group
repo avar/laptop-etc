@@ -61,3 +61,4 @@ rtkit:x:121:
 saned:x:122:
 Debian-gdm:x:123:
 avar:x:1000:
+ntpd:x:124:
