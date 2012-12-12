@@ -65,3 +65,5 @@ vboxusers:x:124:
 elasticsearch:x:125:
 libvirt:x:126:
 kvm:x:127:
+sambashare:x:128:wdtv,avar
+wdtv:x:1001:
