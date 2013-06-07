@@ -1,14 +1,15 @@
-deb http://ftp.nl.debian.org/debian/ stable main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ stable main non-free contrib
+# 
 
-deb http://ftp.nl.debian.org/debian/ testing main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ testing main non-free contrib
+# deb cdrom:[Debian GNU/Linux 7.0.0 _Wheezy_ - Official amd64 NETINST Binary-1 20130504-14:43]/ wheezy main
 
-deb http://ftp.nl.debian.org/debian/ unstable main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ unstable main non-free contrib
+#deb cdrom:[Debian GNU/Linux 7.0.0 _Wheezy_ - Official amd64 NETINST Binary-1 20130504-14:43]/ wheezy main
 
-deb http://ftp.nl.debian.org/debian/ experimental main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ experimental main non-free contrib
+deb http://ftp.nl.debian.org/debian/ wheezy main
+deb-src http://ftp.nl.debian.org/debian/ wheezy main
 
-#deb http://security.debian.org/ squeeze/updates main
-#deb-src http://security.debian.org/ squeeze/updates main
+deb http://security.debian.org/ wheezy/updates main
+deb-src http://security.debian.org/ wheezy/updates main
+
+# wheezy-updates, previously known as 'volatile'
+deb http://ftp.nl.debian.org/debian/ wheezy-updates main
+deb-src http://ftp.nl.debian.org/debian/ wheezy-updates main
