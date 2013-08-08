@@ -1,0 +1,1 @@
+Acquire::http::Proxy "http://webproxy.corp.booking.com:3128";
