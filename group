@@ -60,3 +60,4 @@ saned:x:120:
 Debian-gdm:x:121:
 avar:x:1000:
 ntpd:x:122:
+_cvsadmin:x:123:
