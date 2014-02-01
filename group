@@ -39,7 +39,7 @@ users:x:100:
 nogroup:x:65534:
 libuuid:x:101:
 crontab:x:102:
-fuse:x:103:
+fuse:x:103:avar
 avahi-autoipd:x:104:
 scanner:x:105:saned,avar
 messagebus:x:106:
