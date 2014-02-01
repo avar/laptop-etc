@@ -145,3 +145,12 @@ remove: openoffice.org-writer
 
 # Emacs
 build-dep: emacs23
+
+# Mounting the Nexus 5. *Must* be unlocked (no lock screen), then:
+## mkdir -p ~/mnt/nexus-5
+## jmtpfs ~/mnt/nexus-5/
+##
+# To unmount:
+## fusermount -u ~/mnt/nexus-5
+jmtpfs
+fuse
