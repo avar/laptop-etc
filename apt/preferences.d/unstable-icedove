@@ -1,0 +1,4 @@
+Explanation: Ævar likes being on the bleeding icedove edge
+Package: icedove
+Pin: release a=unstable
+Pin-Priority: 1001
