@@ -62,3 +62,4 @@ avar:x:1000:
 ntpd:x:122:
 _cvsadmin:x:123:
 systemd-journal:x:124:
+geoclue:x:125:
