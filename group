@@ -63,3 +63,4 @@ ntpd:x:122:
 _cvsadmin:x:123:
 systemd-journal:x:124:
 geoclue:x:125:
+firebird:x:126:
