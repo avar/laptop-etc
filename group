@@ -37,7 +37,6 @@ staff:x:50:
 games:x:60:
 users:x:100:
 nogroup:x:65534:
-libuuid:x:101:
 crontab:x:102:
 fuse:x:103:avar
 avahi-autoipd:x:104:
@@ -64,3 +63,5 @@ _cvsadmin:x:123:
 systemd-journal:x:124:
 geoclue:x:125:
 firebird:x:126:
+uuidd:x:101:
+input:x:127:
