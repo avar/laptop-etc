@@ -19,6 +19,7 @@ netselect-apt
 apg
 wdiff
 bc
+gnupg
 
 ## Coding / hacking
 
@@ -43,7 +44,7 @@ pv
 # Documentation
 manpages-dev
 glibc-doc
-emacs23-common-non-dfsg
+emacs24-common-non-dfsg
 
 # C compilation
 build-essential
@@ -62,10 +63,11 @@ mysql-client
 #mysql-server
 
 # Java
-sun-java6-bin
-sun-java6-jre
-sun-java6-jdk
-sun-java6-plugin
+#No longer in Debian!:
+#sun-java6-bin
+#sun-java6-jre
+#sun-java6-jdk
+#sun-java6-plugin
 build-dep: josm
 remove: openjdk-6-jdk
 remove: openjdk-6-jre
@@ -111,7 +113,7 @@ gimp
 banshee
 
 # video
-mplayer
+mplayer2
 rtmpdump
 vlc
 
@@ -144,8 +146,10 @@ remove: openoffice.org-style-galaxy
 remove: openoffice.org-thesaurus-en-us
 remove: openoffice.org-writer
 
-# Emacs
-build-dep: emacs23
+# Make sure I can build some stuff from scratch
+build-dep: emacs
+# Brings in the huge texlive-* stuff, we might want to remove that...
+build-dep: git
 
 # Mounting the Nexus 5. *Must* be unlocked (no lock screen), then:
 ## mkdir -p ~/mnt/nexus-5
