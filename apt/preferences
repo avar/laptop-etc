@@ -1,22 +1,27 @@
 # Adapted from a config where I used to use testing instead of stable,
 # now I'm using stable again as the main choice.
 
-Explanation: We normally use testing for everything
+Explanation: We are using the jessie release
+Package: *
+Pin: release a=jessie
+Pin-Priority: 1000
+
+Explanation: After jessie is released maybe I will grab some stuff from testing
 Package: *
 Pin: release a=testing
-Pin-Priority: 500
+Pin-Priority: 900
 
-Explanation: If we install anything not from testing it i usually from stable
+Explanation: Or alternatively from the wheezy, which will be oldstable
 Package: *
-Pin: release a=stable
-Pin-Priority: 400
+Pin: release a=wheezy
+Pin-Priority: 800
 
-Explanation: We install select crazy packages from unstable
+Explanation: We might install some testing packages from unstable
 Package: *
 Pin: release a=unstable
-Pin-Priority: 300
+Pin-Priority: 200
 
-Explanation: Experimental has the lowest priority, for obvious reasons
+Explanation: Or even from experimental
 Package: *
 Pin: release a=experimental
-Pin-Priority: 200
+Pin-Priority: 100
