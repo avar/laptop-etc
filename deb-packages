@@ -143,7 +143,7 @@ remove: openoffice.org-writer
 # Make sure I can build some stuff from scratch
 build-dep: emacs
 # Brings in the huge texlive-* stuff, we might want to remove that...
-build-dep: git
+#build-dep: git
 
 # Mounting the Nexus 5. *Must* be unlocked (no lock screen), then:
 ## mkdir -p ~/mnt/nexus-5
