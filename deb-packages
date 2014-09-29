@@ -159,3 +159,7 @@ build-dep: git
 ## fusermount -u ~/mnt/nexus-5
 jmtpfs
 fuse
+
+## Printing
+cups
+cups-client
