@@ -31,18 +31,14 @@ sub _build_config {
 
     while (my $line = <$fh>) {
         chomp $line;
-        given ($line) {
-            # comment
-            when (/^#/ or /^$/) { next }
-            # Custom action
-            when (/^ (?<action> [^#\s]+ ): \s* (?<package> .+? ) \s* (?:$|\#) /x) {
-                push @{$config->{ $+{action} }} => $+{package};
-            }
-            # Install is the default action
-            when (/^ (?<package>[^#\s]+ ) /x) {
-                push @{$config->{install}} => $+{package};
-            }
-            default { die "Can't parse line:<$line>" }
+        if ($line =~ /^#/ or $line =~ /^$/) {
+            next;
+        } elsif ($line =~ /^ (?<action> [^#\s]+ ): \s* (?<package> .+? ) \s* (?:$|\#) /x) {
+            push @{$config->{ $+{action} }} => $+{package};
+        } elsif ($line =~ /^ (?<package>[^#\s]+ ) /x) {
+            push @{$config->{install}} => $+{package};
+        } else {
+            die "Can't parse line:<$line>";
         }
     }
 
@@ -56,11 +52,12 @@ sub run {
     for my $action (qw/ install src build-dep remove /) {
         my @packages = @{ delete $config->{$action} || [] };
         if (@packages) {
-            given ($action) {
+            if ($action eq "src") {
                 # TODO build from source
-                when ("src") { $self->build_from_source( @packages ); }
+                $self->build_from_source( @packages );
+            } else {
                 # Everything else is simple
-                default { system "aptitude $action -y @packages"; }
+                system "aptitude $action -y @packages";
             }
         }
     }
