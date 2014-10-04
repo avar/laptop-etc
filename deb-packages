@@ -157,6 +157,7 @@ fuse
 ## Printing
 cups
 cups-client
+printer-driver-all
 
 ## Photos
 geeqie
