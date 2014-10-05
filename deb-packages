@@ -162,3 +162,7 @@ printer-driver-all
 
 ## Photos
 geeqie
+
+## Remove avahi-autoipd, see
+## https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=764084
+remove: avahi-autoipd

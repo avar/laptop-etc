@@ -48,7 +48,6 @@ messagebus:x:107:
 avahi:x:108:
 scanner:x:109:saned
 ntp:x:110:
-avahi-autoipd:x:111:
 bluetooth:x:112:
 geoclue:x:113:
 utempter:x:114:
