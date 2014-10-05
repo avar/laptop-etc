@@ -61,3 +61,4 @@ ntpd:x:121:
 _cvsadmin:x:122:
 ssl-cert:x:123:
 lpadmin:x:124:
+kvm:x:125:
