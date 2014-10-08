@@ -166,3 +166,9 @@ geeqie
 ## Remove avahi-autoipd, see
 ## https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=764084
 remove: avahi-autoipd
+
+## Networking
+# The PCI database etc.
+hwdata
+# The MAC address DB at /var/lib/ieee-data/oui.txt.
+ieee-data
