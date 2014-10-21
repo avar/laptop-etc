@@ -62,3 +62,8 @@ _cvsadmin:x:122:
 ssl-cert:x:123:
 lpadmin:x:124:
 kvm:x:125:
+systemd-timesync:x:111:
+systemd-network:x:126:
+systemd-resolve:x:127:
+systemd-bus-proxy:x:128:
+input:x:129:
