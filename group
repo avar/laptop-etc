@@ -37,7 +37,6 @@ staff:x:50:
 games:x:60:
 users:x:100:
 nogroup:x:65534:
-libuuid:x:101:
 netdev:x:102:avar
 systemd-journal:x:103:
 crontab:x:104:
@@ -67,3 +66,4 @@ systemd-network:x:126:
 systemd-resolve:x:127:
 systemd-bus-proxy:x:128:
 input:x:129:
+uuidd:x:101:
