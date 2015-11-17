@@ -5,9 +5,8 @@
 # that works even if disks are added and removed. See fstab(5).
 #
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-/dev/mapper/snth--vg-root /               btrfs   defaults        0       1
+/dev/mapper/snth--vg-root /               ext4    errors=remount-ro 0       1
 # /boot was on /dev/sda1 during installation
-UUID=5ccbbba3-f0e6-40fc-a3be-3b24e842d53c /boot           ext2    defaults        0       2
+UUID=60a45f1c-f3f1-4eec-a94c-4d77e7f43a22 /boot           ext2    defaults        0       2
 /dev/mapper/snth--vg-swap_1 none            swap    sw              0       0
 /dev/sr0        /media/cdrom0   udf,iso9660 user,noauto     0       0
-/dev/sdb1       /media/usb0     auto    rw,user,noauto  0       0
