@@ -6,6 +6,9 @@
 #
 # sudo /etc/bin/install-deb-packages
 
+# Firmware
+firmware-iwlwifi
+
 # system utilities
 alsa-base
 sysfsutils
