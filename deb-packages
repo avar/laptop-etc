@@ -61,6 +61,9 @@ libc6-dev
 libcurl4-openssl-dev
 libexpat1-dev
 
+# Servers
+openssh-server
+
 # SQL
 sqlite3
 #mysql-server
