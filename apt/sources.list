@@ -8,30 +8,3 @@ deb-src http://security.debian.org/ jessie/updates main contrib non-free
 # jessie-updates, previously known as 'volatile'
 deb http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
 deb-src http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
-
-# jessie-backports, previously on backports.debian.org
-deb http://ftp.nl.debian.org/debian/ jessie-backports main contrib non-free
-deb-src http://ftp.nl.debian.org/debian/ jessie-backports main contrib non-free
-
-# Current stable (wheezy)
-deb http://ftp.nl.debian.org/debian/ wheezy main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ wheezy main non-free contrib
-
-deb http://security.debian.org/ wheezy/updates main non-free contrib
-deb-src http://security.debian.org/ wheezy/updates main non-free contrib
-
-## wheezy-updates, previously known as 'volatile'
-deb http://ftp.nl.debian.org/debian/ wheezy-updates main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ wheezy-updates main non-free contrib
-
-# Testing
-deb http://ftp.nl.debian.org/debian/ testing main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ testing main non-free contrib
-
-# Unstable
-deb http://ftp.nl.debian.org/debian/ unstable main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ unstable main non-free contrib
-
-# Experimental
-deb http://ftp.nl.debian.org/debian/ experimental main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ experimental main non-free contrib
