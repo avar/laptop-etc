@@ -35,6 +35,7 @@ w3m-el-snapshot
 screen
 git
 git-email
+git-annex
 libemail-valid-perl
 libnet-smtp-ssl-perl
 libauthen-sasl-perl
