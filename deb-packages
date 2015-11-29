@@ -45,6 +45,7 @@ gdb
 strace
 ack-grep
 pv
+parallel
 
 # Documentation
 manpages-dev
