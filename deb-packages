@@ -152,7 +152,7 @@ remove: openoffice.org-thesaurus-en-us
 remove: openoffice.org-writer
 
 # Make sure I can build some stuff from scratch
-build-dep: emacs
+build-dep: emacs24
 # Brings in the huge texlive-* stuff, we might want to remove that...
 #build-dep: git
 
