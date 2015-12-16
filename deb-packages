@@ -31,6 +31,8 @@ stunnel
 # editing
 emacs
 w3m-el-snapshot
+## For Emacs's mu4e to convert html->text
+python-html2text
 
 # hacking tools
 screen
