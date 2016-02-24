@@ -1,0 +1,22 @@
+# Adapted from a config where I used to use testing instead of stable,
+# now I'm using stable again as the main choice.
+
+Explanation: We are using the jessie release
+Package: *
+Pin: release a=jessie
+Pin-Priority: 1000
+
+Explanation: After jessie is released maybe I will grab some stuff from testing
+Package: *
+Pin: release a=testing
+Pin-Priority: 200
+
+Explanation: We might install some testing packages from unstable
+Package: *
+Pin: release a=unstable
+Pin-Priority: 100
+
+Explanation: Or even from experimental
+Package: *
+Pin: release a=experimental
+Pin-Priority: 50

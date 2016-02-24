@@ -8,3 +8,15 @@ deb-src http://security.debian.org/ jessie/updates main contrib non-free
 # jessie-updates, previously known as 'volatile'
 deb http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
 deb-src http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
+
+# Testing
+deb http://ftp.nl.debian.org/debian/ testing main non-free contrib
+deb-src http://ftp.nl.debian.org/debian/ testing main non-free contrib
+
+# Unstable
+deb http://ftp.nl.debian.org/debian/ unstable main non-free contrib
+deb-src http://ftp.nl.debian.org/debian/ unstable main non-free contrib
+
+# Experimental
+deb http://ftp.nl.debian.org/debian/ experimental main non-free contrib
+deb-src http://ftp.nl.debian.org/debian/ experimental main non-free contrib
