@@ -1,4 +1,4 @@
-## The "jessie" release, i.e. at the time testing/nextstable
+## The "jessie" release. Released on 2015-04-25
 deb http://ftp.nl.debian.org/debian/ jessie main contrib non-free
 deb-src http://ftp.nl.debian.org/debian/ jessie main contrib non-free
 
