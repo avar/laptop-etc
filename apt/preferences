@@ -6,6 +6,11 @@ Package: *
 Pin: release a=jessie
 Pin-Priority: 1000
 
+Explanation: Some stuff like mencoder isn't in in stable, get it from debian-multipmedia, but don't upgrade e.g. ffmpeg
+Package: *
+Pin: origin www.deb-multimedia.org
+Pin-Priority: 250
+
 Explanation: After jessie is released maybe I will grab some stuff from testing
 Package: *
 Pin: release a=testing
