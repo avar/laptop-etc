@@ -121,6 +121,7 @@ banshee
 
 # video
 mplayer2
+mencoder
 rtmpdump
 vlc
 
