@@ -1,1 +1,1 @@
-Acquire::http::Proxy "http://webproxy.corp.booking.com:3128";
+Acquire::http::Proxy "http://localhost:3128";
