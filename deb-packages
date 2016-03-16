@@ -105,6 +105,7 @@ libapp-nopaste-perl
 
 # daemons
 openntpd
+squid3
 
 # internet
 iodine
