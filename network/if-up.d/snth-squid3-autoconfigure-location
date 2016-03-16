@@ -1,0 +1,42 @@
+#!/bin/sh -e
+
+current_location=
+if ip route show | head -n 1 | grep -q '^default via 10\.155'
+then
+    current_location=office
+else
+    current_location=elsewhere
+fi
+
+configured_location=$(readlink /etc/squid3/squid.conf.d/location.conf)
+
+if echo $configured_location | grep -q $current_location
+then
+    echo $0: Our location $current_location is already configured in squid as $configured_location
+    # We're already at the configured location, do nothing
+    exit 0
+else
+    echo $0: Changing location from $configured_location to $current_location
+    cd /etc/squid3/squid.conf.d
+    ln -sfv $current_location.conf location.conf
+    service squid3 reload
+
+    # Change the GNOME settings for what proxy setting we should be
+    # using. auto=office, none=elsewhere. Yes that odd quoting
+    # convention is needed. Also dconf even though it's a CLI tool
+    # needs the loving embrace of X to work.
+    case "$current_location" in
+        office)
+            echo $0: Setting gnome-control-center/network proxy settings to auto
+            sudo -u avar DISPLAY=:0 dconf write /system/proxy/mode "'auto'"
+            ;;
+        elsewhere)
+            echo $0: Setting gnome-control-center/network proxy settings to none
+            sudo -u avar DISPLAY=:0 dconf write /system/proxy/mode "'none'"
+            ;;
+        *)
+            echo "$0: PANIC: Don't know about location $current_location"
+            exit 1
+            ;;
+    esac
+fi
