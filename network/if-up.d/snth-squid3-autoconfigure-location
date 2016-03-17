@@ -14,6 +14,9 @@ configured_location=$(readlink /etc/squid3/squid.conf.d/location.conf)
 # using. auto=office, none=elsewhere. Yes that odd quoting
 # convention is needed. Also dconf even though it's a CLI tool
 # needs the loving embrace of X to work.
+#
+# This is not guarded by checking for our current config just for good
+# measure.
 case "$current_location" in
     office)
         echo $0: Setting gnome-control-center/network proxy settings to auto
