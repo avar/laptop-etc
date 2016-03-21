@@ -1,8 +1,10 @@
 #!/bin/sh -xe
 
 current_location=
-if ip route show | head -n 1 | grep -q '^default via 10\.155'
+if ip route show | head -n 1 | grep -q '^default via 10\.15'
 then
+    # It's 10.155.* in AMS9, 10.156.* in AMS11. Matching 10.15*. is
+    # probably a good heuristic.
     current_location=office
 else
     current_location=elsewhere
