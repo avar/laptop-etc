@@ -6,6 +6,10 @@ then
     # It's 10.155.* in AMS9, 10.156.* in AMS11. Matching 10.15*. is
     # probably a good heuristic.
     current_location=office
+elif ip route show | grep tun0 | head -n 1 | grep -q 'via 192\.168\.42'
+then
+    # The address for the tun0 on the bkbastion is 192.168.42.1
+    current_location=office_vpn
 else
     current_location=elsewhere
 fi
@@ -23,6 +27,29 @@ case "$current_location" in
     office)
         echo $0: Setting gnome-control-center/network proxy settings to auto
         sudo -u avar DISPLAY=:0 dconf write /system/proxy/mode "'auto'"
+        ;;
+    office_vpn)
+        echo $0: Setting gnome-control-center/network proxy settings to none
+        sudo -u avar DISPLAY=:0 dconf write /system/proxy/mode "'none'"
+
+        # The OpenVPN erroneously leaves the nameserver entry for my
+        # WiFi on, which will cause issues with accessing all sorts of
+        # internal sites that also have external DNS. I can't find out
+        # how to change OpenVPN to turn ito ff, so just hack it out of
+        # there.
+        if grep -q '^nameserver 192\.168\.' /etc/resolv.conf
+        then
+            echo "$0: We have a 192.168.* nameserver in resolv.conf. Going to remove it"
+            perl -pi  -e 's[^nameserver 192\.168\..*$][]s' /etc/resolv.conf
+            if grep -q '^nameserver 192\.168\.' /etc/resolv.conf
+            then
+                echo "$0: We have removed the 192.168.* nameserver in resolv.conf"
+            else
+                echo "$0: PANIC: Failed to remove the 192.168.* nameserver in resolv.conf!"
+            fi    
+        else
+            echo "$0: We have no 192.168.* nameserver in resolv.conf. Were expecting it, but whatever"
+        fi
         ;;
     elsewhere)
         echo $0: Setting gnome-control-center/network proxy settings to none
