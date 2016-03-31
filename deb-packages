@@ -50,6 +50,10 @@ ack-grep
 pv
 parallel
 
+# For ~/g/adbfs-rootless via https://github.com/spion/adbfs-rootless
+libfuse-dev
+android-tools-adb
+
 # Documentation
 manpages-dev
 glibc-doc
