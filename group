@@ -66,3 +66,4 @@ Debian-gdm:x:126:
 avar:x:1000:
 ntpd:x:127:
 stunnel4:x:128:
+adb:x:129:
