@@ -25,6 +25,13 @@ bc
 gnupg
 locate
 stunnel
+rpm2cpio
+cpio
+
+# For git's libwatchman branch
+check
+libjansson-dev
+libjansson4
 
 ## Coding / hacking
 
