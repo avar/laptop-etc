@@ -28,6 +28,9 @@ stunnel
 rpm2cpio
 cpio
 
+# Building git
+asciidoc
+
 # For git's libwatchman branch
 check
 libjansson-dev
