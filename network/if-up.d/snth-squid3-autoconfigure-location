@@ -61,7 +61,7 @@ case "$current_location" in
         ;;
 esac
 
-if echo $configured_location | grep -q $current_location
+if echo $configured_location | grep -q "^$current_location$"
 then
     echo $0: Our location $current_location is already configured in squid as $configured_location
     # We're already at the configured location, do nothing
