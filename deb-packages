@@ -27,6 +27,7 @@ locate
 stunnel
 rpm2cpio
 cpio
+lftp
 
 # Building git
 asciidoc
