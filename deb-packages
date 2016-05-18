@@ -29,6 +29,7 @@ rpm2cpio
 cpio
 lftp
 libnotify-bin
+netcat-openbsd
 
 # Building git
 asciidoc
