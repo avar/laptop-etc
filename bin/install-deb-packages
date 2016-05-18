@@ -57,7 +57,9 @@ sub run {
                 $self->build_from_source( @packages );
             } else {
                 # Everything else is simple
-                system "aptitude $action -y @packages";
+                my $cmd = "aptitude $action @packages";
+                say "Executing: $cmd";
+                system $cmd;
             }
         }
     }
