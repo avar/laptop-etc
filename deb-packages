@@ -28,6 +28,7 @@ stunnel
 rpm2cpio
 cpio
 lftp
+libnotify-bin
 
 # Building git
 asciidoc
