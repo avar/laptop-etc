@@ -68,3 +68,4 @@ ntpd:x:127:
 stunnel4:x:128:
 adb:x:129:
 rdma:x:130:
+xrdp:x:131:
