@@ -10,6 +10,10 @@ elif ip route show | grep tun0 | head -n 1 | grep -q 'via 192\.168\.42'
 then
     # The address for the tun0 on the bkbastion is 192.168.42.1
     current_location=office_vpn
+elif ip route show | grep dns0 | grep -q '^172\.31\.255\.0'
+then
+    # We have the iodine tunnel active
+    current_location=iodine
 else
     current_location=elsewhere
 fi
@@ -50,6 +54,19 @@ case "$current_location" in
         else
             echo "$0: We have no 192.168.* nameserver in resolv.conf. Were expecting it, but whatever"
         fi
+        ;;
+    iodine)
+        echo $0: Setting gnome-control-center/network proxy settings to manual
+        sudo -u avar DISPLAY=:0 dconf write /system/proxy/mode "'manual'"
+        # Set the socks proxy to 9999 because we'll be using this with
+        # ssh -D 9999
+        sudo -u avar DISPLAY=:0 dconf write /system/proxy/socks/host "'localhost'"
+        sudo -u avar DISPLAY=:0 dconf write /system/proxy/socks/port 9999
+        for type in http https
+        do
+            sudo -u avar DISPLAY=:0 dconf write /system/proxy/$type/host "''"
+            sudo -u avar DISPLAY=:0 dconf write /system/proxy/$type/port 0
+        done
         ;;
     elsewhere)
         echo $0: Setting gnome-control-center/network proxy settings to none
