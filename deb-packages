@@ -43,9 +43,9 @@ libjansson4
 
 # editing
 emacs
-w3m-el-snapshot
-## For Emacs's mu4e to convert html->text
-python-html2text
+## For Emacs's mu4e to convert html->text, reverted, see
+## dotemacs.git's 15b1fc4.
+#python-html2text
 
 # hacking tools
 screen
