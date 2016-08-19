@@ -69,3 +69,4 @@ stunnel4:x:128:
 adb:x:129:
 rdma:x:130:
 xrdp:x:131:
+_graphite:x:132:
