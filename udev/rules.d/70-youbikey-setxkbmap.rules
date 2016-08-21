@@ -1,0 +1,7 @@
+
+# Udev rules for letting the console user access the Yubikey USB
+# device node, needed for challenge/response to work correctly.
+
+ACTION=="add|modify", SUBSYSTEM=="usb", \
+  ATTRS{idVendor}=="1050", ATTRS{idProduct}=="0403", \
+  RUN+="/bin/sh -c '/etc/bin/udev/rules.d/70-youbikey-setxkbmap.rules.sh'"
