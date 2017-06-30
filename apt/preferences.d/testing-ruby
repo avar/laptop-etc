@@ -1,0 +1,4 @@
+Explanation: Ævar needs latest ruby for puppet@work
+Package: ruby
+Pin: release a=testing
+Pin-Priority: 1001
