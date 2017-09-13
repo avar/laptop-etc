@@ -1,25 +1,25 @@
 ## The "stretch" release. Released on 2017-07-22	
-deb http://ftp.nl.debian.org/debian/ stretch main contrib non-free
-deb-src http://ftp.nl.debian.org/debian/ stretch main contrib non-free
+deb http://ftp.is.debian.org/debian/ stretch main contrib non-free
+deb-src http://ftp.is.debian.org/debian/ stretch main contrib non-free
 
 deb http://security.debian.org/ stretch/updates main contrib non-free
 deb-src http://security.debian.org/ stretch/updates main contrib non-free
 
 # stretch-updates, previously known as 'volatile'
-deb http://ftp.nl.debian.org/debian/ stretch-updates main contrib non-free
-deb-src http://ftp.nl.debian.org/debian/ stretch-updates main contrib non-free
+deb http://ftp.is.debian.org/debian/ stretch-updates main contrib non-free
+deb-src http://ftp.is.debian.org/debian/ stretch-updates main contrib non-free
 
 # Testing
-deb http://ftp.nl.debian.org/debian/ testing main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ testing main non-free contrib
+deb http://ftp.is.debian.org/debian/ testing main non-free contrib
+deb-src http://ftp.is.debian.org/debian/ testing main non-free contrib
 
 # Unstable
-deb http://ftp.nl.debian.org/debian/ unstable main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ unstable main non-free contrib
+deb http://ftp.is.debian.org/debian/ unstable main non-free contrib
+deb-src http://ftp.is.debian.org/debian/ unstable main non-free contrib
 
 # Experimental
-deb http://ftp.nl.debian.org/debian/ experimental main non-free contrib
-deb-src http://ftp.nl.debian.org/debian/ experimental main non-free contrib
+deb http://ftp.is.debian.org/debian/ experimental main non-free contrib
+deb-src http://ftp.is.debian.org/debian/ experimental main non-free contrib
 
 # Multimedia, for e.g. mencoder
 #deb http://www.deb-multimedia.org stretch main non-free
