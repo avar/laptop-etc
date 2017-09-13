@@ -95,7 +95,6 @@ sqlite3
 #sun-java6-jre
 #sun-java6-jdk
 #sun-java6-plugin
-build-dep: josm
 build-dep: isync
 build-dep: maildir-utils
 remove: openjdk-6-jdk
