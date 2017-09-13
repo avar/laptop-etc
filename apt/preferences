@@ -1,9 +1,9 @@
 # Adapted from a config where I used to use testing instead of stable,
 # now I'm using stable again as the main choice.
 
-Explanation: We are using the jessie release
+Explanation: We are using the stretch release
 Package: *
-Pin: release a=jessie
+Pin: release a=stretch
 Pin-Priority: 1000
 
 Explanation: Some stuff like mencoder isn't in in stable, get it from debian-multipmedia, but don't upgrade e.g. ffmpeg
@@ -11,7 +11,7 @@ Package: *
 Pin: origin www.deb-multimedia.org
 Pin-Priority: 250
 
-Explanation: After jessie is released maybe I will grab some stuff from testing
+Explanation: After stretch is released maybe I will grab some stuff from testing
 Package: *
 Pin: release a=testing
 Pin-Priority: 200

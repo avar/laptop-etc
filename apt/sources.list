@@ -1,13 +1,13 @@
-## The "jessie" release. Released on 2015-04-25
-deb http://ftp.nl.debian.org/debian/ jessie main contrib non-free
-deb-src http://ftp.nl.debian.org/debian/ jessie main contrib non-free
+## The "stretch" release. Released on 2017-07-22	
+deb http://ftp.nl.debian.org/debian/ stretch main contrib non-free
+deb-src http://ftp.nl.debian.org/debian/ stretch main contrib non-free
 
-deb http://security.debian.org/ jessie/updates main contrib non-free
-deb-src http://security.debian.org/ jessie/updates main contrib non-free
+deb http://security.debian.org/ stretch/updates main contrib non-free
+deb-src http://security.debian.org/ stretch/updates main contrib non-free
 
-# jessie-updates, previously known as 'volatile'
-deb http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
-deb-src http://ftp.nl.debian.org/debian/ jessie-updates main contrib non-free
+# stretch-updates, previously known as 'volatile'
+deb http://ftp.nl.debian.org/debian/ stretch-updates main contrib non-free
+deb-src http://ftp.nl.debian.org/debian/ stretch-updates main contrib non-free
 
 # Testing
 deb http://ftp.nl.debian.org/debian/ testing main non-free contrib
