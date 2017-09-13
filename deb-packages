@@ -41,10 +41,14 @@ libjansson4
 ## Coding / hacking
 
 # editing
-emacs
+emacs25-nox
 ## For Emacs's mu4e to convert html->text, reverted, see
 ## dotemacs.git's 15b1fc4.
 #python-html2text
+
+# Emacs packages
+## for mu4e building
+autoconf-archive
 
 # hacking tools
 screen
@@ -69,7 +73,7 @@ android-tools-adb
 # Documentation
 manpages-dev
 glibc-doc
-emacs24-common-non-dfsg
+emacs25-common-non-dfsg
 
 # C compilation
 build-essential
