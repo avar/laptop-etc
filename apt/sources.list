@@ -22,4 +22,4 @@ deb http://ftp.nl.debian.org/debian/ experimental main non-free contrib
 deb-src http://ftp.nl.debian.org/debian/ experimental main non-free contrib
 
 # Multimedia, for e.g. mencoder
-deb http://www.deb-multimedia.org jessie main non-free
+#deb http://www.deb-multimedia.org stretch main non-free
