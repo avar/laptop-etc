@@ -3,7 +3,7 @@ package Deb::Packages;
 use v5.10.1;
 BEGIN {
     eval { require Mouse } or do {
-        system "aptitude install libmouse-perl libipc-system-simple-perl" and die "Can't install this";
+        system "apt install libmouse-perl libipc-system-simple-perl" and die "Can't install this";
     }
 }
 use Mouse;
@@ -57,7 +57,7 @@ sub run {
                 $self->build_from_source( @packages );
             } else {
                 # Everything else is simple
-                my $cmd = "aptitude $action @packages";
+                my $cmd = "apt $action @packages";
                 say "Executing: $cmd";
                 system $cmd;
             }
@@ -83,7 +83,7 @@ BEGIN {
         autodie->import(":all");
     };
     if ($@) {
-            system "aptitude install libipc-system-simple-perl" and die "Can't install this";
+            system "apt install libipc-system-simple-perl" and die "Can't install this";
     }
 }
 
