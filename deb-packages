@@ -10,7 +10,6 @@
 firmware-iwlwifi
 
 # system utilities
-alsa-base
 sysfsutils
 ethtool
 iotop
