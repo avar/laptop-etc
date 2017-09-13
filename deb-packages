@@ -97,10 +97,6 @@ sqlite3
 #sun-java6-plugin
 build-dep: isync
 build-dep: maildir-utils
-remove: openjdk-6-jdk
-remove: openjdk-6-jre
-remove: openjdk-6-jre-headless
-remove: openjdk-6-jre-lib
 
 ## Perl
 
