@@ -52,6 +52,8 @@ emacs25-nox
 # Emacs packages
 ## for mu4e building
 autoconf-archive
+## mu4e html
+w3m
 
 # hacking tools
 screen
@@ -124,6 +126,7 @@ libapp-nopaste-perl
 # daemons
 openntpd
 squid3
+exim4
 
 # internet
 iodine
