@@ -30,6 +30,9 @@ lftp
 libnotify-bin
 netcat-openbsd
 
+# GUI utilties
+xinput 
+
 # Building git
 asciidoc
 
