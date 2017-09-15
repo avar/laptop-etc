@@ -63,3 +63,5 @@ Debian-gdm:x:123:
 avar:x:1000:
 ntpd:x:124:
 stunnel4:x:125:
+nm-openvpn:x:126:
+Debian-exim:x:127:
