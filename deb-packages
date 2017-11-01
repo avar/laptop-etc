@@ -6,6 +6,9 @@
 #
 # sudo /etc/bin/install-deb-packages
 
+# core system
+apt-transport-https
+
 # Firmware
 firmware-iwlwifi
 
