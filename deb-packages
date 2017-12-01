@@ -73,6 +73,7 @@ strace
 ack-grep
 pv
 parallel
+jq
 
 # For ~/g/adbfs-rootless via https://github.com/spion/adbfs-rootless
 libfuse-dev
