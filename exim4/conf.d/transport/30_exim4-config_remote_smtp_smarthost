@@ -12,6 +12,7 @@
 remote_smtp_smarthost:
   debug_print = "T: remote_smtp_smarthost for $local_part@$domain"
   driver = smtp
+  headers_remove = received
 .ifndef IGNORE_SMTP_LINE_LENGTH_LIMIT
   message_size_limit = ${if > {$max_received_linelength}{998} {1}{0}}
 .endif
