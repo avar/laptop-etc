@@ -13,6 +13,7 @@ apt-transport-https
 firmware-iwlwifi
 
 # system utilities
+moreutils
 sysfsutils
 ethtool
 iotop
