@@ -1,4 +1,4 @@
 Explanation: Ævar likes being on the bleeding git edge
-Package: git git-svn git-email git-man
-Pin: release a=experimental
+Package: git-annex
+Pin: release a=stable
 Pin-Priority: 1001
