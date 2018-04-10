@@ -1,20 +1,20 @@
-# Adapted from a config where I used to use testing instead of stable,
-# now I'm using stable again as the main choice.
+# Use Debian testing (after stable got too old again), with lower
+  priorities for other stuff I can grab.
 
-Explanation: We are using the stretch release
+Explanation: We normally use testing for everything
 Package: *
-Pin: release a=stretch
+Pin: release a=testing
 Pin-Priority: 1000
+
+Explanation: If we install anything not from testing it i usually from stable
+Package: *
+Pin: release a=stable
+Pin-Priority: 400
 
 Explanation: Some stuff like mencoder isn't in in stable, get it from debian-multipmedia, but don't upgrade e.g. ffmpeg
 Package: *
 Pin: origin www.deb-multimedia.org
 Pin-Priority: 250
-
-Explanation: After stretch is released maybe I will grab some stuff from testing
-Package: *
-Pin: release a=testing
-Pin-Priority: 200
 
 Explanation: We might install some testing packages from unstable
 Package: *
