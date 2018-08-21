@@ -34,16 +34,19 @@ lftp
 libnotify-bin
 netcat-openbsd
 
+# terminal utilities
+screen
+tree
+unrar
+pv
+parallel
+jq
+
 # GUI utilties
 xinput 
 
 # Building git
 asciidoc
-
-# For git's libwatchman branch
-check
-libjansson-dev
-libjansson4
 
 ## Coding / hacking
 
@@ -60,21 +63,12 @@ autoconf-archive
 w3m
 
 # hacking tools
-screen
 git
 git-email
 git-annex
-libemail-valid-perl
-libnet-smtp-ssl-perl
-libauthen-sasl-perl
 curl
-xmlstarlet
 gdb
 strace
-ack-grep
-pv
-parallel
-jq
 
 # For ~/g/adbfs-rootless via https://github.com/spion/adbfs-rootless
 libfuse-dev
@@ -103,12 +97,7 @@ openssh-server
 sqlite3
 #mysql-server
 
-# Java
-#No longer in Debian!:
-#sun-java6-bin
-#sun-java6-jre
-#sun-java6-jdk
-#sun-java6-plugin
+# To build mbsync
 build-dep: isync
 build-dep: maildir-utils
 
@@ -117,79 +106,44 @@ build-dep: maildir-utils
 # Core utilities
 perl-doc
 
-# Perl modules
-libdatetime-perl
-libdbd-sqlite3-perl
-libmoose-perl
-libterm-sk-perl
-
-# For check-rollout.pl
-libtext-tabulardisplay-perl
-libtext-csv-xs-perl
-libapp-nopaste-perl
-
 # daemons
-openntpd
 squid3
 exim4
 
 # internet
 iodine
 irssi
-flashplugin-nonfree
+#flashplugin-nonfree
 tcpflow
 
 # graphics
 gimp
-
-# audio
-banshee
 
 # video
 mplayer2
 rtmpdump
 vlc
 
-# photos
-ufraw
-ufraw-batch
-
-# gps
-gpsbabel
-mkgmap
-#qlandkarte
-
 # misc
 ttf-dejavu
 ttf-unifont # this has some Unicode symbols which are missing from ttf-dejavu
-tree
-unrar
 
 # Make sure I can build some stuff from scratch
 build-dep: emacs
 # Brings in the huge texlive-* stuff, we might want to remove that...
 #build-dep: git
 
-# Mounting the Nexus 5. *Must* be unlocked (no lock screen), then:
-## mkdir -p ~/mnt/nexus-5
-## jmtpfs ~/mnt/nexus-5/
-##
-# To unmount:
-## fusermount -u ~/mnt/nexus-5
-jmtpfs
-fuse
-
 ## Printing
-cups
-cups-client
-printer-driver-all
+#cups
+#cups-client
+#printer-driver-all
 
 ## Photos
 geeqie
 
 ## Remove avahi-autoipd, see
 ## https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=764084
-remove: avahi-autoipd
+#remove: avahi-autoipd
 
 ## Networking
 # The PCI database etc.
