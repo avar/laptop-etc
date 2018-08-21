@@ -155,3 +155,8 @@ ieee-data
 openvpn
 network-manager-openvpn
 network-manager-openvpn-gnome
+
+# E-Mail
+offlineimap
+isync
+mu4e
