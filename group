@@ -65,3 +65,4 @@ nobody:x:999:
 systemd-coredump:x:998:
 Debian-exim:x:124:
 stunnel4:x:125:
+nm-openvpn:x:126:
