@@ -7,5 +7,5 @@
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
 /dev/mapper/evledraar--vg-root /               ext4    relatime,errors=remount-ro 0       1
 # /boot was on /dev/sda1 during installation
-UUID=66208d03-d688-4687-a8ef-dda6246c0faf /boot           ext2    defaults        0       2
+UUID=3b554c87-5155-4066-a922-0310e4059d15 /boot           ext2    relatime        0       2
 /dev/mapper/evledraar--vg-swap_1 none            swap    sw              0       0
