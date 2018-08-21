@@ -150,3 +150,8 @@ geeqie
 hwdata
 # The MAC address DB at /var/lib/ieee-data/oui.txt.
 ieee-data
+
+# Work OpenVPN
+openvpn
+network-manager-openvpn
+network-manager-openvpn-gnome
