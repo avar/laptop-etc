@@ -18,7 +18,13 @@ else
     current_location=elsewhere
 fi
 
-configured_location=$(readlink /etc/squid3/squid.conf.d/location.conf)
+configured_location=
+if readlink /etc/squid3/squid.conf.d/location.conf
+then
+    configured_location=$(readlink /etc/squid3/squid.conf.d/location.conf)
+else
+    configured_location=unconfigured
+fi
 
 # Change the GNOME settings for what proxy setting we should be
 # using. auto=office, none=elsewhere. Yes that odd quoting
@@ -87,5 +93,5 @@ else
     echo $0: Changing location from $configured_location to $current_location
     cd /etc/squid3/squid.conf.d
     ln -sfv $current_location.conf location.conf
-    service squid3 reload
+    systemctl reload squid
 fi
