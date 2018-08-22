@@ -41,6 +41,7 @@ unrar
 pv
 parallel
 jq
+expect
 
 # GUI utilties
 xinput 
@@ -160,3 +161,5 @@ network-manager-openvpn-gnome
 offlineimap
 isync
 mu4e
+## To build mu4e (not in build-deps for some reason)
+libgmime-3.0-dev
