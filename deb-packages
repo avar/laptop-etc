@@ -33,6 +33,7 @@ cpio
 lftp
 libnotify-bin
 netcat-openbsd
+nmap
 
 # terminal utilities
 screen
