@@ -36,6 +36,7 @@ netcat-openbsd
 nmap
 whois
 dnsutils
+time
 
 # terminal utilities
 screen
