@@ -35,6 +35,7 @@ libnotify-bin
 netcat-openbsd
 nmap
 whois
+dnsutils
 
 # terminal utilities
 screen
