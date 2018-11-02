@@ -37,6 +37,7 @@ nmap
 whois
 dnsutils
 time
+rsync
 
 # terminal utilities
 screen
