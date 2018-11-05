@@ -74,11 +74,11 @@ nonlocal:
 # here so that mail to relay_domains is handled separately.
 
 smarthost:
-  debug_print = "R: smarthost for sending from $sender_address to $local_part@$domain"
+  debug_print = "R: smarthost for $local_part@$domain"
   driver = manualroute
   domains = ! +local_domains
   transport = remote_smtp_smarthost
-  route_list = * ${lookup{$sender_address}partial-lsearch{CONFDIR/smarthosts}} byname
+  route_list = * ${lookup{${address:$h_from:}}partial-lsearch{CONFDIR/smarthosts}} byname
   host_find_failed = ignore
   same_domain_copy_routing = yes
   no_more
