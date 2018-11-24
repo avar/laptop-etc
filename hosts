@@ -1,7 +1,8 @@
 127.0.0.1	localhost
 127.0.1.1	evledraar.booking.com evledraar
 
-5.9.157.150	u.nix.is u
+5.9.157.150	u.nix.is	u
+78.46.64.234	vm.nix.is	vm
 
 # The following lines are desirable for IPv6 capable hosts
 ::1     localhost ip6-localhost ip6-loopback
