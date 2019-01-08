@@ -61,7 +61,6 @@ saned:x:122:
 Debian-gdm:x:123:
 avar:x:1000:
 kvm:x:105:
-nobody:x:999:
 systemd-coredump:x:998:
 Debian-exim:x:124:
 stunnel4:x:125:
