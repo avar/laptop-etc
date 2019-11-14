@@ -19,9 +19,9 @@ else
 fi
 
 configured_location=
-if readlink /etc/squid3/squid.conf.d/location.conf
+if readlink /etc/squid/squid.conf.d/location.conf
 then
-    configured_location=$(readlink /etc/squid3/squid.conf.d/location.conf)
+    configured_location=$(readlink /etc/squid/squid.conf.d/location.conf)
 else
     configured_location=unconfigured
 fi
@@ -91,7 +91,7 @@ then
     exit 0
 else
     echo $0: Changing location from $configured_location to $current_location
-    cd /etc/squid3/squid.conf.d
+    cd /etc/squid/squid.conf.d
     ln -sfv $current_location.conf location.conf
     systemctl reload squid
 fi
