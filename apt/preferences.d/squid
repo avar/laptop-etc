@@ -1,0 +1,4 @@
+Explanation: Ævar has not bothered to upgrade to squid v4
+Package: squid
+Pin: release a=stable
+Pin-Priority: 1001
