@@ -114,7 +114,6 @@ build-dep: maildir-utils
 perl-doc
 
 # daemons
-squid3
 exim4
 
 # internet
