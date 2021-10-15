@@ -9,10 +9,7 @@
 remote_smtp_smarthost:
   debug_print = "T: remote_smtp_smarthost for $local_part@$domain"
   driver = smtp
-  headers_remove = received
-.ifndef IGNORE_SMTP_LINE_LENGTH_LIMIT
-  message_size_limit = ${if > {$max_received_linelength}{998} {1}{0}}
-.endif
+  multi_domain
   hosts_try_auth = <; ${if exists{CONFDIR/passwd.client} \
         {\
         ${lookup{$host}nwildlsearch{CONFDIR/passwd.client}{$host_address}}\
@@ -24,6 +21,12 @@ remote_smtp_smarthost:
 .endif
 .ifdef REMOTE_SMTP_SMARTHOST_HOSTS_REQUIRE_TLS
   hosts_require_tls = REMOTE_SMTP_SMARTHOST_HOSTS_REQUIRE_TLS
+.endif
+.ifdef REMOTE_SMTP_SMARTHOST_TLS_VERIFY_CERTIFICATES
+  tls_verify_certificates = REMOTE_SMTP_SMARTHOST_TLS_VERIFY_CERTIFICATES
+.endif
+.ifdef REMOTE_SMTP_SMARTHOST_TLS_VERIFY_HOSTS
+  tls_verify_hosts = REMOTE_SMTP_SMARTHOST_TLS_VERIFY_HOSTS
 .endif
 .ifdef REMOTE_SMTP_HEADERS_REWRITE
   headers_rewrite = REMOTE_SMTP_HEADERS_REWRITE
@@ -42,4 +45,10 @@ tls_certificate = REMOTE_SMTP_SMARTHOST_TLS_CERTIFICATE
 .endif
 .ifdef REMOTE_SMTP_SMARTHOST_PRIVATEKEY
 tls_privatekey = REMOTE_SMTP_SMARTHOST_PRIVATEKEY
+.endif
+.ifdef REMOTE_SMTP_TRANSPORTS_HEADERS_REMOVE
+  headers_remove = REMOTE_SMTP_TRANSPORTS_HEADERS_REMOVE
+.endif
+.ifdef REMOTE_SMTP_SMARTHOST_PROTOCOL
+  protocol = REMOTE_SMTP_SMARTHOST_PROTOCOL
 .endif
