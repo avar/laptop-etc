@@ -48,7 +48,6 @@ ssl-cert:x:109:
 rtkit:x:110:
 avahi-autoipd:x:111:
 messagebus:x:112:
-ssh:x:113:
 bluetooth:x:114:avar
 lpadmin:x:115:avar
 geoclue:x:116:
@@ -69,3 +68,6 @@ tss:x:127:
 render:x:128:
 bitlbee:x:129:
 karina:x:1001:
+vboxusers:x:130:
+_ssh:x:113:
+sgx:x:131:
