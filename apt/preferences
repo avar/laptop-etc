@@ -1,5 +1,5 @@
 # Use Debian testing (after stable got too old again), with lower
-  priorities for other stuff I can grab.
+# priorities for other stuff I can grab.
 
 Explanation: We normally use testing for everything
 Package: *
@@ -10,11 +10,6 @@ Explanation: If we install anything not from testing it i usually from stable
 Package: *
 Pin: release a=stable
 Pin-Priority: 400
-
-Explanation: Some stuff like mencoder isn't in in stable, get it from debian-multipmedia, but don't upgrade e.g. ffmpeg
-Package: *
-Pin: origin www.deb-multimedia.org
-Pin-Priority: 250
 
 Explanation: We might install some testing packages from unstable
 Package: *

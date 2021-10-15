@@ -1,13 +1,14 @@
-## The "stretch" release. Released on 2017-07-22	
-deb http://ftp.debian.org/debian/ stretch main contrib non-free
-deb-src http://ftp.debian.org/debian/ stretch main contrib non-free
+## The "bullseye" release. Released in 2021
+deb http://ftp.debian.org/debian/ bullseye main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye main contrib non-free
 
-deb http://security.debian.org/ stretch/updates main contrib non-free
-deb-src http://security.debian.org/ stretch/updates main contrib non-free
+## Security updates; From example at https://wiki.debian.org/SourcesList
+deb http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
+deb-src http://deb.debian.org/debian-security/ bullseye-security main contrib non-free
 
-# stretch-updates, previously known as 'volatile'
-deb http://ftp.debian.org/debian/ stretch-updates main contrib non-free
-deb-src http://ftp.debian.org/debian/ stretch-updates main contrib non-free
+# bullseye-updates, previously known as 'volatile'
+deb http://ftp.debian.org/debian/ bullseye-updates main contrib non-free
+deb-src http://ftp.debian.org/debian/ bullseye-updates main contrib non-free
 
 # Testing
 deb http://ftp.debian.org/debian/ testing main non-free contrib
