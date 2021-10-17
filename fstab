@@ -4,8 +4,11 @@
 # device; this may be used with UUID= as a more robust way to name devices
 # that works even if disks are added and removed. See fstab(5).
 #
+# systemd generates mount units based on this file, see systemd.mount(5).
+# Please run 'systemctl daemon-reload' after making changes here.
+#
 # <file system> <mount point>   <type>  <options>       <dump>  <pass>
-/dev/mapper/evledraar--vg-root /               ext4    relatime,errors=remount-ro 0       1
-# /boot was on /dev/sda1 during installation
-UUID=3b554c87-5155-4066-a922-0310e4059d15 /boot           ext2    relatime        0       2
-/dev/mapper/evledraar--vg-swap_1 none            swap    sw              0       0
+/dev/mapper/gmgdl--vg-root /               ext4    errors=remount-ro 0       1
+# /boot was on /dev/nvme0n1p1 during installation
+UUID=1a636d24-0c59-43b0-8d1f-e63dbc5520c7 /boot           ext2    defaults        0       2
+/dev/mapper/gmgdl--vg-swap_1 none            swap    sw              0       0
