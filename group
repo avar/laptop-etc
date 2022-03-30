@@ -64,3 +64,6 @@ systemd-coredump:x:999:
 sgx:x:124:
 _ssh:x:112:
 Debian-exim:x:125:
+debian-tor:x:126:
+lpadmin:x:127:
+ssl-cert:x:128:
